@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-family:"Oswald", sans-serif
+}
+
+header span {
+    display:block;
+    text-align:center;
+    background-color:#1E3A8A;
+    padding: 25px;
+    color: white;
+}
+
+header ul {
+    display:flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color:#60A5FA;
+
+
+}
+
+header li {
+    list-style: none;
+    text-align: center;
+    
+}
+
+header li a {
+       text-decoration: none;
+       color: black;
+}
+
+header li a:hover {
+    color: white;
+    transition: color 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main-columns{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 25px;
+    gap:25px;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: -5px 5px rgba(0, 0, 0, 0.1);
+    
+
+}
+
+
+.imgandp {
+     display: flex;
+  align-items: center;
+  gap: 10px;  
+}
+.me img {
+
+    width: 213px;
+    height: 320px;
+    padding: 10px;
+}
+
+.mexico img {
+    width: 198px;
+    height: 133px;
+    padding: 10px;
+
+}
+
+.mexico p {
+    margin: 20px;
+}
+
+.card ul {
+ 
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+
+}
+
+.card h2 {
+    background-color:#F3F4F6;
+}
+
+.coding {
+    display:block;
+    margin: 0 auto;
+    width:200px;
+    height: 200px;
+    padding:10px;
+
+}
+
+.card li a:hover {
+    color: gray;
+    transition: color 0.3s, background-color 0.3s;
+    cursor: pointer;
+
+}
+
+footer {
+    text-align: right;
+    background-color:#60A5FA;
+}
+
+footer p {
+    margin-right: 10px;
+    margin-top: 10px;
+    color: black;
+}
+
