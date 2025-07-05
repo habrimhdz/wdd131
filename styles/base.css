@@ -43,7 +43,7 @@ header li a:hover {
 }
 
 main {
-    width: 90%;
+    width: 1200px;
     text-align: center;
     margin: 0 auto;
 }
@@ -96,7 +96,7 @@ main {
 }
 
 .card li a {
-    color:black;
+    color: black;
 
 
 }
