@@ -3,23 +3,24 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 :root {
-    font-family:"Oswald", sans-serif
+    font-family: "Oswald", sans-serif
 }
 
 header span {
-    display:block;
-    text-align:center;
-    background-color:#1E3A8A;
+    display: block;
+    text-align: center;
+    background-color: #1E3A8A;
     padding: 25px;
     color: white;
 }
 
 header ul {
-    display:flex;
+    display: flex;
     width: 100%;
     justify-content: space-evenly;
-    background-color:#60A5FA;
+    background-color: #60A5FA;
 
 
 }
@@ -27,12 +28,12 @@ header ul {
 header li {
     list-style: none;
     text-align: center;
-    
+
 }
 
 header li a {
-       text-decoration: none;
-       color: black;
+    text-decoration: none;
+    color: black;
 }
 
 header li a:hover {
@@ -42,31 +43,32 @@ header li a:hover {
 }
 
 main {
-    width: 100%;
+    width: 90%;
     text-align: center;
     margin: 0 auto;
 }
 
-.main-columns{
-    display:grid;
+.main-columns {
+    display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 25px;
-    gap:25px;
+    gap: 25px;
 }
 
 .card {
     border-radius: 8px;
     box-shadow: -5px 5px rgba(0, 0, 0, 0.1);
-    
+
 
 }
 
 
 .imgandp {
-     display: flex;
-  align-items: center;
-  gap: 10px;  
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
 .me img {
 
     width: 213px;
@@ -86,7 +88,7 @@ main {
 }
 
 .card ul {
- 
+
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -97,15 +99,15 @@ main {
 }
 
 .card h2 {
-    background-color:#F3F4F6;
+    background-color: #F3F4F6;
 }
 
 .coding {
-    display:block;
+    display: block;
     margin: 0 auto;
-    width:200px;
+    width: 200px;
     height: 200px;
-    padding:10px;
+    padding: 10px;
 
 }
 
@@ -118,7 +120,7 @@ main {
 
 footer {
     text-align: right;
-    background-color:#60A5FA;
+    background-color: #60A5FA;
 }
 
 footer p {
@@ -126,4 +128,3 @@ footer p {
     margin-top: 10px;
     color: black;
 }
-
