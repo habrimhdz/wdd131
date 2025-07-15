@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 
-
 }
 
 .libertinus-mono-regular {
@@ -16,6 +15,7 @@
 :root {
     --text-color: #333;
     font-family: "Libertinus Mono", monospace;
+    font-style: normal;
 }
 
 header {
@@ -144,8 +144,10 @@ footer {
     }
 
 
-    .srcset-icon:hover {
+    .srcset-icon::after {
         background-color: #e0e0e0;
+        content: "";
+        position: absolute;
     }
 
 
