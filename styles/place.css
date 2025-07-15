@@ -77,6 +77,13 @@ footer {
     background-color: #f0f0f0;
 }
 
+.srcset-icon::after {
+    background-color: #e0e0e0;
+    content: "";
+    position: absolute;
+}
+
+
 @media (min-width: 1000px) {
 
     body {
@@ -145,10 +152,8 @@ footer {
     }
 
 
-    .srcset-icon::after {
-        background-color: #e0e0e0;
-        content: "";
-        position: absolute;
+    .srcset-icon {
+        display: none;
     }
 
 
@@ -176,5 +181,11 @@ footer {
         padding: 0px;
         margin: 0 auto;
 
+    }
+
+    h2::after {
+        content: "🌤️";
+        font-size: 1.5em;
+        margin-left: 10px;
     }
 }
