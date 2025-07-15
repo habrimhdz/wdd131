@@ -16,6 +16,7 @@
     --text-color: #333;
     font-family: "Libertinus Mono", monospace;
     font-style: normal;
+    --main-color: brown;
 }
 
 header {
