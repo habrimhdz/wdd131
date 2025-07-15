@@ -14,9 +14,12 @@
 
 :root {
     --text-color: #333;
+    --main-color: brown;
+}
+
+body {
     font-family: "Libertinus Mono", monospace;
     font-style: normal;
-    --main-color: brown;
 }
 
 header {
