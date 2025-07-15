@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+.libertinus-mono-regular {
+    font-family: "Libertinus Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+:root {
+    --text-color: #333;
+    font-family: "Libertinus Mono", monospace;
+}
+
+header {
+    background-color: brown;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+hr {
+    height: 25px;
+    background-color: lightgray;
+    border: black 1px solid;
+}
+
+.hr2 {
+    height: 10px;
+    background-color: lightgray;
+    border: black 1px solid;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.data,
+.weather {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 1px;
+    text-align: center;
+    line-height: 2;
+    box-shadow: 0 2px 5px black;
+
+}
+
+footer {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.caption {
+    font-style: italic;
+    color: var(--text-color);
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+@media (min-width: 1000px) {
+
+    body {
+        position: relative;
+        width: 100%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1px;
+        bottom: 0;
+        width: 100%;
+        margin: 0 auto;
+        opacity: 0.9;
+
+    }
+
+    img.srcset-image {
+
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin: 0 auto;
+
+    }
+
+    .data {
+        position: absolute;
+        top: 20%;
+        left: 3%;
+        bottom: 40%;
+        width: 20%;
+        max-width: 550px;
+        max-height: 550px;
+        margin: 0 auto;
+        font-size: 0.8em;
+        line-height: 1;
+    }
+
+    .weather {
+        position: absolute;
+        top: 40%;
+        bottom: 20%;
+        right: 3%;
+        width: 20%;
+        max-width: 450px;
+        max-height: 100%;
+        margin: 0 auto;
+    }
+
+    .weather p {
+        font-size: 0.9em;
+        line-height: 1.8;
+        position: relative;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+    }
+
+    .data p {
+        font-size: 1em;
+        line-height: 1.8;
+        position: relative;
+        background-color: #f0f0f0;
+        margin-top: 5px;
+    }
+
+
+    .srcset-icon:hover {
+        background-color: #e0e0e0;
+    }
+
+
+    .caption {
+        display: none;
+    }
+
+    h2 {
+        background-color: brown;
+        border-radius: 5px;
+        width: 100%;
+        margin-left: -28px;
+        color: white;
+    }
+
+    .hr2 {
+        display: none;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        padding: 0px;
+        margin: 0 auto;
+
+    }
+}

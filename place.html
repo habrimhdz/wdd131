@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="A detailed page about the city of Puebla, Mexico.">
+    <meta name="author" content="Angel Habrim Hernandez Garcia">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>The city of Puebla</h1>
+    </header>
+    <hr>
+    <picture>
+        <source media="(min-width: 1000px)" srcset="images/puebla-large1.webp">
+        <source media="(max-width: 999px)" srcset="images/puebla-medium.webp">
+        <img src="images/puebla-small.jpg" alt="A view of Puebla, Mexico" class="srcset-image" width="550"
+            height="720">
+    </picture>
+    <p class="caption">A beautiful view of Puebla, Mexico</p>
+    <hr class="hr2">
+    <main>
+        <div class="data">
+            <h2>Data</h2>
+            <p>Area: 546 km²<br>
+                Population: 6,583,278<br>
+                Capital: Puebla de Zaragoza<br>
+                Languages: Español<br>
+                Currency: Pesos (MXN)<br>
+                Time Zone: (GMT-6)<br>
+                Calling Code: +222
+            </p>
+        </div>
+        <div class="weather">
+            <h2>Weather </h2>
+            <picture class="weather-image">
+                <source media="(min-width: 550px)" srcset="images/weather.svg">
+                <img src="images/weather.svg" alt="weather icon" class="srcset-icon">
+            </picture>
+            <!--Use Javascript static variables for everything but the wind chill. The wind chill factor should be calculated and displaye when the page loads wiht a function.-->
+            <p>Temperature: <span id="temperature"></span><br>
+                Conditions: <span id="conditions"></span><br>
+                Wind: <span id="windSpeed"></span><br>
+                Wind Chill: <span id="windChill"></span><br>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span>, Angel Habrim Hernandez Garcia, Mexico</p>
+        <p>Last Modified:<span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
