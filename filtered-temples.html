@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A collection of pictures from various temples.">
+    <meta name="author" content="Angel Habrim Hernandez Garcia">
+    <title>Picture Album</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav class="navbar">
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <div class="nav-menu" id="navMenu">
+                <button id="home">Home</button>
+                <button id="old">Old</button>
+                <button id="new">New</button>
+                <button id="large">Large</button>
+                <button id="small">Small</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2 class="pictures">Pictures of temples:</h2>
+        <div id="temple-cards" class="cards-container"></div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span>, Angel Habrim Hernandez Garcia, Mexico</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/filtered-temples.js" defer></script>
+</body>
+
+</html>
