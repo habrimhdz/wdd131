@@ -46,6 +46,25 @@
 
     }
 
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        color: var(--blue-primary);
+
+    }
+
+    nav ul li a {
+
+        color: var(--blue-primary);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--text-light);
+    }
+
     main {
         width: 980px;
         margin: 0 auto;
@@ -126,21 +145,6 @@
         border-radius: 10px;
         margin: 10px;
         color: var(--blue-primary);
-    }
-
-    nav button {
-        background: var(--blue-lighter);
-        border: none;
-        font-size: 1.5rem;
-        color: var(--blue-primary);
-        padding: 10px;
-        font-family: 'Times New Roman', sans-serif
-    }
-
-    nav button:hover {
-        opacity: 0.9;
-        color: var(--blue-light);
-        cursor: pointer;
     }
 
     body {

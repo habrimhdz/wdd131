@@ -109,10 +109,21 @@
         display: flex;
     }
 
-    .nav-menu button {
+    .nav-menu li {
         text-align: center;
         padding: 10px 0;
     }
+
+    a {
+        color: var(--blue-primary);
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    a:hover {
+        color: var(--text-light);
+    }
+
 
     .cards-container h2 {
         margin-top: 70px;
@@ -125,20 +136,6 @@
 
     }
 
-    nav button {
-        background: var(--blue-lighter);
-        border: none;
-        font-size: 1.5rem;
-        color: var(--blue-primary);
-        padding: 10px;
-        font-family: 'Times New Roman', sans-serif
-    }
-
-    nav button:hover {
-        opacity: 0.9;
-        color: var(--blue-light);
-        cursor: pointer;
-    }
 
     body {
         font-family: "Playfair Display", sans-serif;
