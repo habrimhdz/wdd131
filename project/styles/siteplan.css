@@ -1,9 +1,40 @@
-html {
-    color: aquamarine;
+:root {
+    --main-color: #6DD062;
+    --secondary-color: #E78F8F;
+    
 }
 
 body {
-    background-color: black;
+    background-color: var(--secondary-color);
     font-family: Arial, sans-serif;
     text-align: center;
+    text-shadow: var(--main-color) 1px 1px 2px;
+    font-family: 'DM Serif Text', serif;
+}
+
+a {
+    color: var(--main-color);
+    text-shadow: black 1px 1px 2px;
+    font-size: 30px;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+    text-shadow: var(--main-color) 3px 1px 2px;
+}
+
+img {
+    box-shadow: black 4px 2px 5px ;
+}
+
+.green {
+    color: var(--main-color);
+    
+    text-shadow: black 1px 1px 2px;
+}
+
+.pink {
+    color: var(--secondary-color);
+    text-shadow: black 1px 1px 2px;
 }
