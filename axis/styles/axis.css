@@ -18,21 +18,6 @@ body {
     font-family: 'DM Serif Text', serif;
 }
 
-
-.green {
-    color: var(--main-color);
-    background-color: black;
-    border-radius: 10px;
-    text-shadow: black 1px 1px 2px;
-}
-
-.pink {
-    color: var(--secondary-color);
-    background-color: black;
-    border-radius: 10px;
-    text-shadow: black 1px 1px 2px;
-}
-
 /* Footer Items*/
 
 footer {
@@ -95,6 +80,31 @@ header img {
     cursor: pointer;
 }
 
+.dark-mode {
+    --main-color: #6DD062;
+    --secondary-color: #E78F8F;
+    --text-color: white;
+    background-color: #121212;
+}
+
+.dark-mode header, .dark-mode footer {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+.dark-mode .nav-menu.nav-menu.active {
+    background-color: #121212;
+    box-shadow: 0 0 30px white;
+}
+
+.dark-mode .nav-menu a {
+    color: white;
+    list-style: none;
+}
+
+.dark-mode footer img {
+    filter: invert(1);
+}   
+
 
 /* Hamburger*/
 
@@ -103,7 +113,7 @@ header img {
         position: absolute;
         top: 10px;
         right: 10px;
-        font-size: 28px;
+        font-size: 30px;
         background: none;
         padding: 5px;
         color: var(--blue-primary);
@@ -116,7 +126,7 @@ header img {
 
     .nav-menu {
         position: absolute;
-        top: 80px;
+        top: 95%;
         background-color: var(--blue-lighter);
         flex-direction: column;
         width: 100%;
@@ -135,6 +145,7 @@ header img {
     .nav-menu li {
         text-align: center;
         padding: 10px 0;
+        list-style: none;
     }
 
     .nav-menu a {
