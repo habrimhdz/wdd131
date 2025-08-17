@@ -297,54 +297,36 @@ figure.offerings figcaption, .offerings2 figcaption, .offerings3 figcaption {
 
 /* Contact Page */
 
-.contact {
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-    padding: 48px 16px;
-    font-size: larger;
-}
-
-.contact-card {
-    width: 100%;
-    box-shadow: 0 10px 30px rgba(5, 88, 255, 0.2);
-    padding: 28px;
+ h1 {
+    margin-bottom: 10px;
     color: var(--text-color);
-    background: white;
-    border-radius: 12px;
-}
-
-.contact-header {
     text-align: center;
 }
-.contact-header h1 {
-    font-size: clamp(1.6rem, 1.2rem + 1.2vw, 2.1rem);
-    margin: 0 0 6px;
-    color: var(--main-color);
-    text-align: center;
-}
-.contact-header .subtitle {
-    color: var(--secondary-color);
-    margin: 0;
-}
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1.2fr .8fr;
-    gap: 22px;
-}
-@media screen and (max-width: 767px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Form Styles */
 .contact-form {
-
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
     color: var(--text-color);
 }
+
+.info-card h2 {
+    color: var(--secondary-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-shadow: black 1px 1px;
+}
+
+.contact-info li {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 12px;
+    list-style: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
 }
 
 /* Fade Up Animation */

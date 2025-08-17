@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axis Clothing Website</title>
     <link rel="stylesheet" href="styles/axis.css">
-    <meta name="description" content="Clothing Website">
+    <meta name="description" content="Clothing Website Contact Page">
     <meta name="author" content="Angel Habrim Hernandez Garcia">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,85 +21,79 @@
             <button class="hamburger" id="hamburger">&#9776;</button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="axis.html" id="home">Home</a></li>
-                <li><a href="catalogue.html" id="catalogue">Our Catalogue</a></li>
+                <li><a href="catalogue.html" id="catalogue">General Offerings</a></li>
                 <li><a href="contact.html" id="contact">Contact Us</a></li>
             </ul>
         </nav>
-    </header>
-     <main class="contact">
-    <section class="contact-card" aria-labelledby="contact-title">
-      <header class="contact-header">
         <h1 id="contact-title">Contact Us</h1>
-      </header>
-
-      <div class="contact-grid">
-        <!-- the form -->
+    </header>
+    <!-- I decided to give it a shot at formatting some of the form here, which helped me learn (bit of a hassle though, ended up using both the styles file and this) -->
+    <main>
+        <div class="contact-grid">
         <form class="contact-form" action="#" method="post" novalidate>
-          <div class="form-row">
-            <label for="name">Full name</label>
-            <input id="name" name="name" type="text" placeholder="Jane Doe" required />
-          </div>
-
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@example.com" required />
-          </div>
-
-          <div class="form-row">
-            <label for="topic">Topic</label>
-            <select id="topic" name="topic" required>
-              <option value="" disabled selected>Select a topic</option>
-              <option>General question</option>
-              <option>Support</option>
-              <option>Partnerships</option>
-              <option>Billing</option>
-            </select>
-          </div>
-
-          <div class="form-row">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" placeholder="Tell us a bit more…" required></textarea>
-          </div>
-
-          <div class="form-row form-row--split">
-            <div class="checkbox">
-              <input id="consent" name="consent" type="checkbox" required />
-              <label for="consent">I agree to the terms and privacy policy</label>
+            <div class="form-row">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" placeholder="Joseph Smith" required style="width:100%;padding:12px 10px;font-size:1rem;border-radius:6px;border:1px solid #ccc;box-sizing:border-box;margin-top:6px;">
             </div>
-            <button class="btn" type="submit">Send message</button>
-          </div>
 
-          <p class="form-hint">
-            All fields are required. We’ll never share your information.
-          </p>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required style="width:100%;padding:12px 10px;font-size:1rem;border-radius:6px;border:1px solid #ccc;box-sizing:border-box;margin-top:6px;">
+            </div>
+
+            <div class="form-row">
+                <label for="topic">Topic</label>
+                <select id="topic" name="topic" required style="width:100%;padding:12px 10px;font-size:1rem;border-radius:6px;border:1px solid #ccc;box-sizing:border-box;margin-top:6px;">
+                    <option value="" disabled selected>Select a topic</option>
+                    <option>General question</option>
+                    <option>Support</option>
+                    <option>Partnerships</option>
+                    <option>Complaint</option>
+                </select>
+            </div>
+
+            <div class="form-row"> 
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Tell us a bit more…" required style="width:100%;padding:12px 10px;font-size:1rem;border-radius:6px;border:1px solid #ccc;box-sizing:border-box;margin-top:6px;resize:vertical;"></textarea>
+            </div>
+
+            <div class="form-row form-row--split" style="display:flex;flex-direction:column;gap:12px;">
+                <div class="checkbox" style="display:flex;align-items:center;">
+                    <input id="consent" name="consent" type="checkbox" required style="width:20px;height:20px;margin-right:8px;">
+                    <label for="consent" style="font-size:1rem;">I agree to the terms and privacy policy</label>
+                </div>
+                <button class="btn" type="submit" style="width:100%;padding:14px 0;font-size:1.1rem;border-radius:6px;background:#222;color:#fff;border:none;cursor:pointer;">Send message</button>
+            </div>
+
+            <p class="form-hint" style="font-size:0.95rem;color:#666;text-align:center;margin-top:16px;">
+                All fields are required. We’ll never share your information.
+            </p>
         </form>
 
-        <!-- Sidebar -->
-        <aside class="contact-info" aria-label="Company contact information">
-          <div class="info-card">
-            <h2>Get in touch</h2>
-            <ul class="info-list">
-              <li>
-                <span class="info-label">Email:</span>
-                <a href="mailto:hello@example.com">axis@example.com</a>
-              </li>
-              <li>
-                <span class="info-label">Phone:</span>
-                <a href="tel:+1234567890">+1 (234) 567-890</a>
-              </li>
-              <li>
-                <span class="info-label">Hours:</span>
-                Mon–Fri, 9:00–17:00
-              </li>
-              <li>
-                <span class="info-label">Address: </span>
-                Durango, Mexico
-              </li>
-            </ul>
-          </div>
-        </aside>
-      </div>
-    </section>
+        <section class="contact-info" aria-label="Company contact information">
+            <div class="info-card">
+                <h2>Get in touch</h2>
+                <ul class="info-list">
+                    <li>
+                        <span class="info-label">Email:</span>
+                        <a href="mailto:axis@example.com">axis@example.com</a>
+                    </li>
+                    <li>
+                        <span class="info-label">Phone:</span>
+                        <a href="tel:+1234567890">+1 (234) 567-890</a>
+                    </li>
+                    <li>
+                        <span class="info-label">Hours:</span>
+                        Mon–Fri, 9:00–17:00
+                    </li>
+                    <li>
+                        <span class="info-label">Address: </span>
+                        Durango, Mexico
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
     </main>
    <footer>
         <p>©<span id="currentyear"></span>, Angel Habrim Hernandez Garcia, Mexico</p>
