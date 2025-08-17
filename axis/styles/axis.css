@@ -268,7 +268,7 @@ h1 {
   left: 50%;            
   transform: translate(-50%, -50%); 
   color: var(--secondary-color);        
-  font-size: 3rem;      
+  font-size: 2rem;      
   font-weight: bold;
   text-shadow: 2px 2px 2px black; }
 
