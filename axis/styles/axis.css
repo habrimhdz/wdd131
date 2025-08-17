@@ -30,7 +30,7 @@ footer {
     box-shadow: 0 0 30px rgba(5, 88, 255, 0.5);
     margin-top: 50px;
     gap: 100px;
-    text-shadow: black 1px 1px;
+    text-shadow: black 0.5px 0.5px;
 }
 
 footer a {
@@ -101,7 +101,7 @@ header img {
     list-style: none;
 }
 
-.dark-mode footer img {
+.dark-mode footer img{
     filter: invert(1);
 }   
 
@@ -127,12 +127,15 @@ header img {
     .nav-menu {
         position: absolute;
         top: 95%;
+        right: 1px;
         background-color: var(--blue-lighter);
         flex-direction: column;
         width: 100%;
         padding: 10px;
         z-index: 1000;
         display: none;
+        border-radius: 0 0 10px 10px;
+        gap: 50px;
     }
 
     .nav-menu.active {
@@ -236,6 +239,10 @@ header img {
 
 /* Catalogue pague */
 
+.offerings img {
+    max-height: 800px;
+}
+
 .offerings, .offerings2, .offerings3
 {
     position: relative;   
@@ -282,8 +289,62 @@ figure.offerings figcaption, .offerings2 figcaption, .offerings3 figcaption {
     margin-top: 20px;
     text-shadow: black 1px 1px;
     opacity: 0.9;
-    margin-top: -40px;
-    width: 98%;
+    margin-top: -70px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Contact Page */
+
+.contact {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 48px 16px;
+    font-size: larger;
+}
+
+.contact-card {
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(5, 88, 255, 0.2);
+    padding: 28px;
+    color: var(--text-color);
+    background: white;
+    border-radius: 12px;
+}
+
+.contact-header {
+    text-align: center;
+}
+.contact-header h1 {
+    font-size: clamp(1.6rem, 1.2rem + 1.2vw, 2.1rem);
+    margin: 0 0 6px;
+    color: var(--main-color);
+    text-align: center;
+}
+.contact-header .subtitle {
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 22px;
+}
+@media screen and (max-width: 767px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Form Styles */
+.contact-form {
+
+    padding: 20px;
+    color: var(--text-color);
+}
 }
 
 /* Fade Up Animation */

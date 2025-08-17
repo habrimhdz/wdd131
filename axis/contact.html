@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Clothing Website</title>
+    <link rel="stylesheet" href="styles/axis.css">
+    <meta name="description" content="Clothing Website">
+    <meta name="author" content="Angel Habrim Hernandez Garcia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/axis-logo.jpg" alt="Axis Logo" width="200" loading="lazy">
+        <!-- Dark mode option goes here --> 
+        <button class="toggleDark" id="toggleDark">&#127769;</button>
+        <!-- Hamburger Menu Goes Here --> 
+          <nav class="navbar">
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="axis.html" id="home">Home</a></li>
+                <li><a href="catalogue.html" id="catalogue">Our Catalogue</a></li>
+                <li><a href="contact.html" id="contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+     <main class="contact">
+    <section class="contact-card" aria-labelledby="contact-title">
+      <header class="contact-header">
+        <h1 id="contact-title">Contact Us</h1>
+      </header>
+
+      <div class="contact-grid">
+        <!-- the form -->
+        <form class="contact-form" action="#" method="post" novalidate>
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-row">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic" required>
+              <option value="" disabled selected>Select a topic</option>
+              <option>General question</option>
+              <option>Support</option>
+              <option>Partnerships</option>
+              <option>Billing</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell us a bit more…" required></textarea>
+          </div>
+
+          <div class="form-row form-row--split">
+            <div class="checkbox">
+              <input id="consent" name="consent" type="checkbox" required />
+              <label for="consent">I agree to the terms and privacy policy</label>
+            </div>
+            <button class="btn" type="submit">Send message</button>
+          </div>
+
+          <p class="form-hint">
+            All fields are required. We’ll never share your information.
+          </p>
+        </form>
+
+        <!-- Sidebar -->
+        <aside class="contact-info" aria-label="Company contact information">
+          <div class="info-card">
+            <h2>Get in touch</h2>
+            <ul class="info-list">
+              <li>
+                <span class="info-label">Email:</span>
+                <a href="mailto:hello@example.com">axis@example.com</a>
+              </li>
+              <li>
+                <span class="info-label">Phone:</span>
+                <a href="tel:+1234567890">+1 (234) 567-890</a>
+              </li>
+              <li>
+                <span class="info-label">Hours:</span>
+                Mon–Fri, 9:00–17:00
+              </li>
+              <li>
+                <span class="info-label">Address: </span>
+                Durango, Mexico
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+    </main>
+   <footer>
+        <p>©<span id="currentyear"></span>, Angel Habrim Hernandez Garcia, Mexico</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook.webp" alt="Facebook"></a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.webp" alt="Instagram"></a>
+            <a href="https://www.X.com/">
+                <img src="images/x.webp" alt="Twitter"></a>
+        </nav>
+    </footer>
+    <script src="scripts/axis.js" defer></script>
+</body>
+</html>
