@@ -264,7 +264,7 @@ h1 {
 
 .offerings h2, .offerings2 h2, .offerings3 h2 {
     position: absolute;
-  top: 25%;             
+  top: 20%;             
   left: 50%;            
   transform: translate(-50%, -50%); 
   color: var(--secondary-color);        
@@ -281,7 +281,7 @@ h1 {
   font-size: 1.5rem;      
   font-weight: bold;
   text-shadow: 2px 2px 3px black;
-  width: 98%;
+  width: 95%;
 }
 
 figure.offerings figcaption, .offerings2 figcaption, .offerings3 figcaption {
