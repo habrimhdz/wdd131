@@ -1,0 +1,129 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+
+    --text-color: rgb(30, 69, 82);
+    
+}
+
+body {
+    text-align: center;
+    font-family: 'DM Serif Text', serif;
+}
+
+/* Footer Items*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+    padding: 16px;
+    box-shadow: 0 0 30px rgba(5, 88, 255, 0.5);
+    margin-top: 50px;
+    gap: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+footer a {
+    justify-content: left;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    
+}
+
+.socialmedia img {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+/* Header Items*/
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    color: black;
+    box-shadow: 0 0 30px rgba(5, 88, 255, 0.5);
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin: 0 auto;
+    text-align: center;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(5, 88, 255, 0.5);
+    text-align: left;
+    color: var(--text-color);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+}
+
+label, legend, h2 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    display: block;
+    color: rgba(5, 88, 255, 0.815);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: rgb(30, 69, 82);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(5, 88, 255, 0.815);
+    font-weight: bold;
+}
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 600px) {
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
